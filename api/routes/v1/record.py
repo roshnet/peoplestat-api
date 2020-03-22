@@ -4,7 +4,6 @@ import numpy as np
 import pickle
 
 from api import app
-from api.lib.algorithms import resume_clf
 
 
 class RecordDataResource:
