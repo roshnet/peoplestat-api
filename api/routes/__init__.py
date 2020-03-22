@@ -2,5 +2,5 @@
 
 from .v1 import (
     default,
-    train
+    record
 )

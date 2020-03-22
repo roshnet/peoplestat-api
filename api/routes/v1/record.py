@@ -7,7 +7,7 @@ from api import app
 from api.lib.algorithms import resume_clf
 
 
-class TrainModelResource:
+class RecordDataResource:
     def on_post(self, req, resp):
         if len(req.media) > 10:
             # Minimise any unneccessary processing the server would do for
@@ -29,4 +29,4 @@ class TrainModelResource:
             })
 
 
-app.add_route('/api/v1/train', TrainModelResource())
+app.add_route('/api/v1/record', RecordDataResource())
